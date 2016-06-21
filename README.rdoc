@@ -5,14 +5,14 @@ Angular2 + Rails 4
 
 === Install
 
-	== Install dependencies
+==== Install dependencies
   bundle install
   npm install
 
-  == Rake data
+==== Rake data
   bundle exec rake db:create db:migrate db:seed
 
-  == Build typescript file to run
+==== Build typescript file to run
   gulp
 
 === How to run
