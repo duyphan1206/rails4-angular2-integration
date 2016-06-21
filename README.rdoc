@@ -1,0 +1,21 @@
+
+== Angular2 Rails 4 Integration
+
+Angular2 + Rails 4
+
+=== Install
+	// Install dependencies
+  bundle install
+  npm install
+
+  // Rake data
+  bundle exec rake db:create db:migrate db:seed
+
+  // Build typescript file to run
+  gulp
+
+=== How to run
+  rails s
+
+=== How to development
+	You only need change file and re-run "gulp" to update. Not need restart WEBrick::HTTPServer.

@@ -1,0 +1,19 @@
+<form [ngFormModel]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+	<div>
+		<label for="first-name"> First Name:  </label>
+		<input type="text" id="first-name" [ngFormControl]="myForm.controls['firstName']">
+	</div>
+	<div>
+		<label for="last-name"> Last Name: </label>
+		<input type="text" id="last-name" [ngFormControl]="myForm.controls['lastName']">
+	</div>
+	<div>
+		<label for="phone"> Phone Number : </label>
+		<input type="text" id="phone" [ngFormControl]="myForm.controls['phone']">
+	</div>
+	<div>
+		<label for="email"> E-Mail: </label>
+		<input type="text" id="email" [ngFormControl]="myForm.controls['email']">
+	</div>
+	<button type="submit" [disabled]="!myForm.valid">Create Contact</button>
+</form>
